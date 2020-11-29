@@ -1,7 +1,9 @@
+#need to install pyttsx3 library for texttospeech conversion,
+#and also install PyPDF2 for extracting information of pdf file
 import pyttsx3
 import PyPDF2
 
-pdf=open("insbook.pdf", "rb")
+pdf=open("insbook.pdf", "rb") #you will be give your own pdf that you want to listen
 pdfreader=PyPDF2.PdfFileReader(pdf)
 pages=pdfreader.numPages
 print(pages)
